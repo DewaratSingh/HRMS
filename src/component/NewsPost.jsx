@@ -15,8 +15,8 @@ const NewsPost = ({title, des, Like, comment, postImg, userImg, userName}) => {
       <div className="w-80" style={{ marginLeft: "5px" }}>
         <div className="user-name">{userName}</div>
         <div className="user-time">{title}</div>
-        <div>
-          {des.length > 50 ? des.slice(0, 50) + "..." : des}
+        <div className="ancizar-sans-italic ">
+          {des && des.length > 80 ? des.slice(0, 80) + "..." : des}
         </div>
         <div>
           <center>
@@ -25,8 +25,8 @@ const NewsPost = ({title, des, Like, comment, postImg, userImg, userName}) => {
         </div>
         <div className="flex">
           <div>
-             <div className="action-item">
-              <span className="material-symbols-outlined">comment</span>
+            <div className="action-item">
+              <span className="material-symbols-outlined">thumb_up</span>
               <span className="action-count">{Like || 0}</span>
               <span className="action-label">Like</span>
             </div>
