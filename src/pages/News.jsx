@@ -18,7 +18,7 @@ const News = () => {
     },
     {
       title: "Road Trip Diaries",
- des: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit culpa magnam dolorum ex hic. Animi, numquam? Distinctio laborum accusamus doloremque? Vel ab doloribus sequi facilis est consequatur, nemo labore, placeat omnis, soluta dolor iusto deserunt minus perferendis beatae tempora reiciendis. Impedit rerum beatae iusto earum tenetur pariatur rem, repellendus vitae. Found this hidden trail deep in the woods.",
+      des: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit culpa magnam dolorum ex hic. Animi, numquam? Distinctio laborum accusamus doloremque? Vel ab doloribus sequi facilis est consequatur, nemo labore, placeat omnis, soluta dolor iusto deserunt minus perferendis beatae tempora reiciendis. Impedit rerum beatae iusto earum tenetur pariatur rem, repellendus vitae. Found this hidden trail deep in the woods.",
       Like: 132,
       comment: 15,
       postImg: "https://picsum.photos/400/300?random=108",
@@ -93,15 +93,16 @@ const News = () => {
   }, [Data]);
 
   return (
-    <div className="flex w-full ">
+    <div className="flex w-full justify-between ">
       <div className="w-20">
         <Sidebar page={0} />
       </div>
-      <div className="w-80 left" ref={scrollerRef}>
+      <div className="w-80 left your-div" ref={scrollerRef}>
         <div className="post">
           <h3>What's happening today ?</h3>
           <center>
             <textarea
+            style={{backgroundColor: "white"}}
               name="description"
               id="description"
               placeholder="Share,update and achivement or shout out..."
@@ -133,6 +134,36 @@ const News = () => {
           );
         })}
         <Loding />
+      </div>
+      <div style={{ textAlign: "left" }}>
+        <div style={{ width: "15rem", marginTop: "1rem" }}>
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "1rem" }}
+          >
+            <img
+              height={45}
+              width={45}
+              alt=""
+              className="profileIcon rounded"
+            />
+            <div>
+              <div>Pawan Singh</div>
+              <div>123k Follower</div>
+            </div>
+          </div>
+          <h3 className="wdxl-lubrifont-tc-regular">Trending in HR</h3>
+          <div style={{ color: "blue" }}>
+            <p>#frontend_development</p>
+            <p>#react_js</p>
+            <p>#web_design</p>
+          </div>
+          <h3 className="wdxl-lubrifont-tc-regular">Recommended Connections</h3>
+          <div>
+            <p>Dewarat Singh</p>
+            <p>Kunal Nagar</p>
+            <p>Abhay Thakur</p>
+          </div>
+        </div>
       </div>
     </div>
   );

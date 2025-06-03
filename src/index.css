@@ -229,3 +229,16 @@ textarea {
 .post:hover {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
+
+.justify-between {
+  justify-content: space-between;
+}
+.your-div {
+  overflow: auto; /* or scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.your-div::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsPost = ({title, des, Like, comment, postImg, userImg, userName}) => {
   return (
-    <div className="news flex w-20 post">
+    <div className="news flex w-20 justify-between post">
       <div>
         <img
           src={userImg}
