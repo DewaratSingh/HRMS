@@ -6,7 +6,7 @@ import Loding from "../component/Loding";
 import Sidebar from "../component/Sidebar";
 
 const News = () => {
-  const [Data, setData] = useState([
+  const [Dat, setData] = useState([
     {
       title: "Exploring the Forest",
       des: " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit culpa magnam dolorum ex hic. Animi, numquam? Distinctio laborum accusamus doloremque? Vel ab doloribus sequi facilis est consequatur, nemo labore, placeat omnis, soluta dolor iusto deserunt minus perferendis beatae tempora reiciendis. Impedit rerum beatae iusto earum tenetur pariatur rem, repellendus vitae. Found this hidden trail deep in the woods.",
